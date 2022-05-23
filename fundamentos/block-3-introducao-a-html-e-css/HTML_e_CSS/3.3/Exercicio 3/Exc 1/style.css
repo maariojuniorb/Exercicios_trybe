@@ -1,0 +1,17 @@
+body {
+
+    text-align:center;
+
+}
+
+ol li:hover {
+
+    background-color: red;
+    font-size:18px
+}
+
+ol, ul {
+
+    list-style:none;
+
+}

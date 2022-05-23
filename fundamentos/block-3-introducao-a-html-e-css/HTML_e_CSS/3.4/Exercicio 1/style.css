@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+  }
+
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    display:block;
+    margin-left: 810px;
+  }
+
+  .second {
+    display:inline-block;
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    margin-left: 610px;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display:inline-block;
+  }
+
+  .premiacoes {
+
+    text-align:center;
+    text-decoration:none;
+
+  }
+
+
