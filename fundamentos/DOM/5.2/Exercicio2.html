@@ -91,25 +91,46 @@
       imagem.className = 'small-image'
       section2.appendChild(imagem);
 
-      function makeUL(array) {
-    // Crie o elemento da lista:
+      // function criarLista(listItems) {
+      //   let list = document.createElement('ul');
+      //   list.id = 'listaUL'
+
+      //   for(let index = 0; index < listItems.length; index += 1) {
+      //       let elementosListaNumerica = listItems[index];
+
+      //       let itemsList = document.createElement('li');
+      //       itemsList.innerText = elementosListaNumerica;
+      //       elementosListaNumerica.className = 'itens-lista'
+
+      //       list.appendChild(itemsList);
+      //   }
+      //   return list;
+      // }
+
+      let numeros = ['um','dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      function criarLista(parametro) {
         let list = document.createElement('ul');
         list.id = 'listaUL'
 
-        for(let i = 0; i < array.length; i += 1) {
-            // Crie o item da lista:
-            let item = document.createElement('li');
+        for(let index = 0; index < parametro.length; index += 1) {
+          let elementosListaNumerica = parametro[index];
 
-            // Defina seu conteúdo:
-            item.appendChild(document.createTextNode(array[i]));
+          let itemsList = document.createElement('li');
+          itemsList.innerText = elementosListaNumerica;
+          itemsList.className = 'itens-lista'
 
-            // Adicione-o à lista:
-            list.appendChild(item);
+          list.appendChild(itemsList);
         }
         return list;
       }
-      let numeros = ['um','dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-      section3.appendChild(makeUL(numeros));
+
+      section3.appendChild(criarLista(numeros));
+
+
+
+
+      // section3.appendChild(criarLista(numeros));
 
       function createh3 (local) {
         let h3 = document.createElement('h3');
@@ -129,8 +150,18 @@
       newSection.style.background = 'green';
 
       let lista = document.getElementById('listaUL')
-      lista.lastElementChild.remove();
-      section3.firstElementChild.lastElementChild.remove();
+      let elementosListaNumerica = document.querySelectorAll('.itens-lista')
+
+      // list.lastElementChild.remove();
+      // section3.firstElementChild.lastElementChild.remove();
+
+      for (let index = 0; index < elementosListaNumerica.length; index += 1) {
+        let elemento = elementosListaNumerica[index]
+
+        if (elemento.innerText.includes('nove') || elemento.innerText.includes('dez')){
+          lista.removeChild(elemento);
+        }
+      }
 
 
 
