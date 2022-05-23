@@ -1,0 +1,177 @@
+header {
+
+    background: rgb(107, 107, 107);
+    padding: 20px 0;
+
+}
+
+.caixa-header {
+
+
+    position:relative;
+    width:940px;
+    margin: 0 auto;
+    height: 150px;
+    top:0;
+
+}
+
+nav {
+
+    position:relative;
+    bottom:0;
+
+}
+
+nav li {
+
+    display:inline;
+    margin-left: 15px;
+    
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:22px;
+    text-transform: uppercase;
+    color: rgb(217, 179, 255);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    font-size: 24px;
+    color:#4b2727
+}
+    
+
+
+
+
+
+
+main {
+
+    background-color: rgb(185, 185, 185);
+    text-align:center;
+}
+
+.caixa {
+
+    width: auto;
+    display:block;
+    margin:0 10px;
+    width: 100%;
+}
+
+
+.italico {
+
+    font-style: italic;
+
+}
+
+.negrito {
+
+    font-weight: bold;
+}
+
+
+.fatos {
+
+    display:inline-block;
+    text-align: center;
+    margin-bottom: 70px;
+    
+}
+
+.artigo-1 {
+
+    display:inline-block;
+    width:900px;
+    text-align:center;
+    margin-top:20px;
+}
+
+.artigo-1 h2 {
+
+    text-align:center;
+
+}
+
+.foto-fatos {
+    display:inline-block;
+    width:200px;
+    margin-top:30px;
+    position: absolute;
+    right:50px;
+    border-radius: 10px;
+
+}
+
+.artigo-2 {
+    display:inline-block;
+    margin-top: 50px;
+    width: 90%;
+    margin-bottom: 70px
+
+}
+
+.artigo-2 h2 {
+
+    text-align:center;
+
+}
+
+.fatos-curiosos-texto {
+    display:inline-block;
+    width: 900px;
+    text-align:center;
+    margin-left: 0;
+}
+
+.foto-artigo-2 {
+    display:inline-block;
+    width: 200px;
+    margin-top: 20px;
+    position:absolute;
+    right: 50px;
+    border-radius: 10px;
+}
+
+.artigo-3 {
+    display:inline-block;
+    margin-left:100px;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 70px
+}
+
+.foto-artigo-3 {
+    display:inline-block;
+    width: 200px;
+    margin-top: 100px;
+    position:relative;
+    left: 240px;
+    bottom: 11px;
+    border-radius: 10px;
+
+}
+
+footer {
+    text-align:center;
+    background-color: #383838;
+    padding: 50px 0;
+    margin-bottom: 0;
+
+}
+
+.copyright {
+    text-align:center;
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+
+}
