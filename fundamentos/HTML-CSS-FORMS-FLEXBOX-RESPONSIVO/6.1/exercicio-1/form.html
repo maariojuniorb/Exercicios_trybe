@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteio Trybe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script2.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <form method="get">
+      <div class="nome">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" minlength="10" maxlength="40" placeholder="Digite seu nome completo">
+      </div>
+      <div class="email">
+        <label for="e-mail">Email: </label>
+        <input type="email" name="e-mail" id="e-mail" minlength="10" maxlength="50" placeholder="Digite seu e-mail">
+      </div>
+      <div class="opcoes">
+        <fieldset class="field">
+          <legend> Destino Preferido </legend>
+          <input type="radio" name="destino" id="opcoes1" value="cidade">
+          <label for="opcoes1">Cidade</label>
+          <input type="radio" name="destino" id="opcoes2" value="campo">
+          <label for="opcoes2">Campo</label>
+          <input type="radio" name="destino" id="opcoes3" value="praia">
+          <label for="opcoes3">Praia</label>
+          <input type="radio" name="destino" id="opcoes4" value="monstanhas">
+          <label for="opcoes4">Monstanhas</label>
+        </fieldset>
+      </div>
+      <div class="text-area">
+        <label for="resposta">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip</label>
+        <textarea name="resposta" id="resposta" cols="30" rows="10" maxlength="500" placeholder="Escreva sua mensagem aqui"></textarea>
+      </div>
+      <div class="data">
+        <label for="data">Qual a melhor data para realizar sua viagem?</label>
+        <input type="date" name="data" id="data">
+      </div>
+      <div class="concordo1">
+        <input type="checkbox" name="concordo" id="concordo1" value="receber-novidades">
+        <label for="concordo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      </div>
+      <div class="concordo2">
+        <input type="checkbox" name="concordo" id="concordo2" value="usar-imagens" checked>
+        <label for="concordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      </div">
+      <div class="buttons">
+        <button type="submit" id="btn-enviar">Enviar</button>
+        <button type="reset" id="btn-clear">Apagar</button>
+      </div>
+    </form>
+
+  </header>
+</body>
+</html>
