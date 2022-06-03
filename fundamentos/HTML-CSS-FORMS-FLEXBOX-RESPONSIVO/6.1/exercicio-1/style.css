@@ -13,25 +13,28 @@ header, form {
 }
 
 .conteudo {
-  margin-left: 310px;
   padding: 100px 0;
+  width: 730px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 #resposta {
-  width: 50%;
+  width: 80%;
   height: 160px;
 }
 
 .text-text-area {
-  width: 50%;
+  width: 80%;
 }
 
 #nome {
-  width: 50%;
+  width: 80%;
 }
 
 #e-mail {
-  width: 50%;
+  width: 80%;
 }
 .btn-group{
   display: block;
